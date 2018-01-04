@@ -1,0 +1,9 @@
+var ss = document.createElement("link");
+        ss.type = "text/css";
+        ss.rel = "stylesheet";
+        if (CSS.supports("display", "grid") == true){
+            ss.href = "css/style.css";
+        }else {
+            ss.href = "css/old-style.css";
+        }
+        document.getElementsByTagName("head")[0].appendChild(ss);
